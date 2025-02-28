@@ -47,6 +47,7 @@ body {
     font-weight: 500;
     position: relative;
     padding: 0.5rem 0;
+    font-size: 1.5rem;
 }
 
 .menu-link::after {
@@ -71,6 +72,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .foto-perfil {
@@ -80,6 +82,7 @@ body {
     border-radius: 50%;
     border: 4px solid var(--vidro);
     animation: flutuar 5s ease-in infinite;
+    margin-top: 50px;
 }
 
 h1 {
@@ -93,6 +96,26 @@ h1 {
     font-size: 1.5rem;
     color: var(--claro);
 }
+
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.icons a {
+    font-size: 2rem;
+}
+
+main div a:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
 
 /* Sobre */
 
@@ -206,6 +229,7 @@ h1 {
     color: var(--claro);
     border: 1px solid var(--vidro);
     outline: none;
+    font-size: 1rem;
 }
 
 .campo-form:focus {
@@ -227,6 +251,7 @@ h1 {
     font-weight: bold;
     width: 100%;
     transition: all 0.5 ease;
+    font-size: 1rem;
 }
 
 .botao-form:hover {
