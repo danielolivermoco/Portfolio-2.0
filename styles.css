@@ -97,25 +97,24 @@ h1 {
     color: var(--claro);
 }
 
-
 .icons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+}
+
+i {
+    font-size: 2rem;
+    color: var(--claro);
     cursor: pointer;
 }
 
-.icons a {
-    font-size: 2rem;
-}
-
-main div a:hover {
+a:hover {
     transform: scale(1.5);
     transition: 0.5s;
 }
-
 
 /* Sobre */
 
@@ -192,11 +191,52 @@ main div a:hover {
 
 .info-projetos {
     margin-bottom: 5px;
+    /* text-align: center; */
 }
 
 .paragrafo-projetos {
     color: rgba(226, 232, 240, 0.8);
     line-height: 1.25rem;
+}
+
+.tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.imagens-tecnologias {
+    height: 40px;
+    width: 40px;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.botao-link {
+    color: var(--claro);
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+    transition: all 0.5 ease;
+    font-size: 1rem;
+    height: 27px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.botao-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
 
 /* Section Contatos */
