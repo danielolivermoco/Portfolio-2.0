@@ -158,8 +158,11 @@ a:hover {
 
 .projetos-caixa {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     gap: 2rem;
+    align-items: center;
+    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -311,5 +314,174 @@ a:hover {
 
     50% {
         transform: translateY(-20px);
+    }
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1200px) {
+
+    .projetos-caixa {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .menu-link {
+        font-size: 1.4rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .sobre-titulo {
+        font-size: 2.5rem;
+    }
+
+    .sobre-caixa {
+        max-width: 730px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .foto-perfil {
+        width: 325px;
+        height: 372px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    i {
+        font-size: 1.7rem;
+    }
+
+    .sobre-caixa {
+        max-width: 650px;
+    }
+
+    .projetos-caixa {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 400px));
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 724px) {
+
+    .menu-link {
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .sobre-titulo {
+        font-size: 2.2rem;
+    }
+
+    .sobre-caixa {
+        max-width: 530px;
+    }
+
+    .projetos-titulo {
+        font-size: 2.2rem;
+    }
+
+    .contatos-titulo {
+        font-size: 2.2rem;
+    }
+
+    .formulario-contato {
+        max-width: 485px;
+    }
+
+}
+
+@media screen and (max-width: 610px) {
+
+    .sobre-caixa {
+        max-width: 470px;
+    }
+
+    .formulario-contato {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .menu-link {
+        font: 1.2rem;
+    }
+
+    .foto-perfil {
+        width: 280px;
+        height: 325px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    i {
+        font-size: 1.3rem;
+    }
+
+    .sobre-titulo {
+        font-size: 2rem;
+    }
+
+    .sobre-caixa {
+        max-width: 380px;
+    }
+
+    .projetos-titulo {
+        font-size: 2rem;
+    }
+
+    .projetos-caixa {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+    }
+
+    .contatos-titulo {
+        font-size: 2rem;
+    }
+
+    .formulario-contato {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .menu-link {
+        font-size: 1rem;
+    }
+
+    .foto-perfil {
+        width: 243px;
+        height: 280px;
+    }
+
+    .sobre-caixa {
+        max-width: 340px;
+    }
+
+    .projetos-caixa {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    }
+
+    .formulario-contato {
+        max-width: 373px;
     }
 }
